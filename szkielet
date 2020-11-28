@@ -1,0 +1,157 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <time.h>
+
+int main(int argc, char *argv[])
+{
+int choice, choice1;
+int suma = 0;
+char ch;
+system("clear");
+srand ( time(NULL) );
+do
+{
+ printf("Menu\n\n");
+ puts("1. Logowanie");
+ puts("2. Rejestracja");
+ puts("0. Exit");
+ scanf("%d",&choice);
+ ch = getchar();
+system("clear");
+ switch (choice) {
+     case 1:
+     system("clear");
+
+			{
+			    char login[20];
+                char haslo[20];
+				printf("Logowanie \n\n");
+                printf("podaj login");
+				scanf(login);
+                printf("podaj has³o\n\n");
+                scanf(haslo);
+                break;
+            }
+
+            case 2:
+
+
+            {
+            char PESEL,Numer_Paszportu[11];
+            char haslo[20];
+            printf("Rejestracja \n\n");
+            printf("Wprowadz PESEL,Numer Paszportu");
+            scanf("%c" , PESEL,Numer_Paszportu);
+            printf("Wprowadz haslo");
+            scanf("%c" , haslo);
+            break;
+            break;
+            }
+
+
+ printf("Menu\n\n");
+ puts("1. Wykonaj przelew");
+ puts("0. Exit");
+ scanf("%d",&choice);
+ ch = getchar();
+system("clear");
+ switch (choice)
+
+ case 1:
+
+ {
+ char id_odbiorcy[4];
+ float kwota_przelewu;
+ double id;
+    printf("Wykonaj przelew \n\n");
+    printf("Wprowadz id konta");
+    scanf(id_odbiorcy);
+    printf("Wprowadz kwote przelewu");
+    scanf("%f", kwota_przelewu);
+    przelew();
+    break;
+    }
+
+ printf("Inwestycje\n\n");
+ puts("1. Otworz lokate");
+ puts("0. Exit");
+ scanf("%d",&choice);
+ ch = getchar();
+system("clear");
+ switch (choice)
+
+ case 1:
+
+ {
+ char okres_lokaty[10];
+ float kwota_lokaty;
+ double id;
+    printf("Otworz lokate \n\n");
+    printf("Wprowadz id konta");
+    scanf("%c" , id);
+    printf("Wprowadz kwote lokaty");
+    scanf("%f" , kwota_lokaty);
+    lokata();
+    break;
+    }
+
+
+    printf("Wplata\n\n");
+ puts("1. Wplac pieniedze");
+ puts("0. Exit");
+ scanf("%d",&choice);
+ ch = getchar();
+system("clear");
+ switch (choice)
+
+  case 1:
+
+ {
+ char id_odbiorcy[4];
+ float kwota_lokaty;
+ double id;
+    printf("Wplac pieniedze \n\n");
+    printf("Wprowadz id_odbiorcy");
+    scanf("%f" , id);
+    printf("Wprowadz kwote wp³aty");
+    scanf("%f" , kwota_lokaty);
+    wplata();
+    break;
+    }
+
+    printf("Wyplata\n\n");
+ puts("1. Wyplac  pieniadze");
+ puts("0. Exit");
+ scanf("%d",&choice);
+ ch = getchar();
+system("clear");
+ switch (choice)
+
+
+     case 1:
+ {
+ char id_odbiorcy[4];
+ float kwota_wyplaty;
+ double id;
+    printf("Wyplac pieniadze\n\n");
+    printf("Wprowadz id_obiorcy ")  ;
+    scanf("%c" , id_odbiorcy   );
+    printf("Wprowadz kwote wyp³aty");
+    scanf( "%f" , kwota_wyplaty);
+    wyplata();
+    break;
+    }
+
+ }
+ void przelew(){
+ printf("tutaj bedzie funkcja robi¹ca przelew");
+  void lokata(){
+ printf("tutaj bedzie odpowiedzialna za lokate");
+ void wplata(){
+ printf("tutaj bedzie funkcja robiaca wplaty");
+ void wyplata(){
+ printf("tutaj bêdzie funkcja robiaca  wyplaty");
+
+
+ }
